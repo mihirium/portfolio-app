@@ -1,0 +1,10 @@
+<div class="projects">
+    <div *ngFor="let project of projects" class="job-card">
+      <h2>{{ project.Title }}</h2>
+      <h3>{{ project.Languages }}</h3>
+      <ul>
+        <li *ngFor="let desc of project.Description">{{ desc }}</li>
+      </ul>
+    </div>
+  </div>
+  

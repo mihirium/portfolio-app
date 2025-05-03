@@ -1,0 +1,33 @@
+<nav class="navbar">
+    <ul class="nav-links">
+
+        <li>
+            <a href="#work-history" class="navbar-link" (click)="toggleLine('work')">
+              <div class="navbar-item" [class.expanded]="activeLine === 'work'">
+                <span class="line"></span>
+                <span class="text">Work History</span>
+              </div>
+            </a>
+          </li>
+          
+          
+        <li>
+            <a href="#projects" class="navbar-link" (click)="toggleLine('projects')">
+                <div class="navbar-item" [class.expanded]="activeLine === 'projects'">
+                  <span class="line"></span>
+                  <span class="text">Projects</span>
+                </div>
+            </a>
+        </li>
+
+        <li>
+          <a href="#contact" class="navbar-link" (click)="toggleLine('contact')">
+              <div class="navbar-item" [class.expanded]="activeLine === 'contact'">
+                <span class="line"></span>
+                <span class="text">Contact</span>
+              </div>
+          </a>
+      </li>
+    </ul>
+  </nav>
+  

@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #232D4B;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: auto; /* <-- allows vertical scrolling */
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --x: 50vw;
+    --y: 50vh;
+  }
+  
+  .spotlight-overlay {
+    position: fixed; /* ← this is the key */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    background: radial-gradient(
+      circle 400px at var(--x) var(--y),
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.05) 30%,
+      rgba(35, 45, 75, 0.9) 80%,
+      rgba(35, 45, 75, 1) 100%
+    );
+    z-index: 9999;
+    mix-blend-mode: lighten;
+    transition: background 0.1s ease;
+  }
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,36 @@
+<div class="work-history">
+  <div *ngFor="let job of workHistory" class="job-card">
+    <a href={{job.Link}} target="_blank" rel="noopener noreferrer"> 
+    <div class="stack">
+      <h3 class="date-label">{{ job.Dates }}</h3>
+      <div style="width: 70%">
+        <div class="position-row">
+          <h2>{{ job.Position }}</h2>
+          <h2>&middot;</h2>
+          <h2>{{ job.Company }}</h2>
+          <div class="spacer"></div>
+          <!-- <h2>{{ job.Location }}</h2> -->
+          <span class="right arrow"></span>
+
+        </div>
+
+        <p style="color: rgb(181, 181, 181);">
+          {{ job.Description.join(' ') }}
+        </p>
+        <div *ngFor="let skill of job.Attributes" class="pill">
+          <span class="pill-text">{{ skill }}</span>
+      </div>
+    </div>
+  </div>
+  <div>
+  </div>
+</a>
+</div>
+<a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link">
+  <p>View Full Résumé</p>
+  <span class="arrow"></span>
+</a>
+
+
+
+

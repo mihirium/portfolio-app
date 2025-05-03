@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh; /* ensures it grows at least to full screen height */
+}
+
+.fixed-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40vw;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-inner {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; 
+
+}
+.gap {
+  margin-bottom: 20%;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.content {
+  margin-left: 40vw;
+  padding: 2rem;
+  padding-top: 15vh; /* aligns with .sidebar-inner margin-top: 20% */
+  width: 70vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+
+  
+.name {
+  font-size: 3.25vw;
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1.5vw;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+section {
+  scroll-margin-top: 2rem;
+}
+
+  
+  /* Other styles remain the same */

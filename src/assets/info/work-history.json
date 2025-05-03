@@ -1,0 +1,35 @@
+[
+    {
+    "id" : 1,
+    "Company" : "Bank of America",
+    "Link": "https://www.bankofamerica.com",
+    "Calendar" : "July 2024 - Present",
+    "Position" : "Full Stack Web Developer",
+    "Dates" : "July 2024 - Present",
+    "Location" : "Charlotte, NC",
+    "Attributes" : ["Angular", "Spring Boot", "Java", "SQL", "Typescript"],
+    "Description" : ["Develop and maintain 5 different applications in the background service investigation team using Java Spring boot for the backend and Angular for the frontend.", "Wrote J-Unit test cases to ensure 80% code coverage and implemented server side validation using the javax.validation library.", "Facilitated business and engineering interests in weekly story grooming sessions."]
+    },
+    {
+    "id": 2,
+    "Company" : "Bank of America",
+    "Link": "https://www.bankofamerica.com",
+    "Calendar" : "June 2023 - August 2023",
+    "Position" : "Software Engineering Intern",
+    "Dates" : "June - August 2023",
+    "Location" : "Charlotte, NC",
+    "Attributes" : ["Angular", "Spring Boot", "Java", "SQL", "Typescript"],
+    "Description" : ["Significantly optimized release pipeline build-times, local run-times, and code maintainability by migrating legacy java repositories to Angular with additional quality improvement tasks." , "Increased system accuracy and stability by conducting comprehensive testing and debugging in Toad database environments and correcting discrepancies in data type outputs.", "Increased team-wide efficiency in badge authorization security and security clearance application process by designing and implementing a proof-of-concept NLP-powered virtual assistant using Amelia, the Alert API, and the Guardian API.", "Conducted comprehensive research of video surveillance vendors specializing in artificial intelligence for a $20,000,000 deal"]
+    },
+    {
+    "id": 3,
+    "Company" : "Emotion and Behavior Lab, UVA",
+    "Link": "https://emotionbehavior.com",
+    "Calendar" : "September 2021 - April 2023",
+    "Position" : "Full Stack Mobile Engineer",
+    "Dates" : "2021 - 2023",
+    "Location" : "Charlottesville, VA",
+    "Attributes" : ["React Native", "JavaScript", "Firebase"],
+    "Description" : ["Enabled the study, design, analysis and simulation of community friendships alongside social and economic mobility parameters by designing, implementing, and launching a full stack react native mobile application.", "Drastically improved user experience by modeling screens after the Gameboy and Ketchapp apps to maximize the game-like feel with Figma.", "Allowed administrators to edit small features of game (number of players, types of roles, and different icons) by using Google sheets API so administrators wouldn't have to edit code base.", "Ensured app quality as a contractor by presenting weekly to 20+ stakeholders including professors and university research assistants."]
+    }
+]
