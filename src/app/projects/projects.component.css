@@ -26,6 +26,7 @@
 .job-card p {
   margin: 5px 0;
   color: rgb(100, 116, 139);
+  font-size: 0.9em;
 }
 
 .job-card ul {
@@ -75,13 +76,14 @@
   cursor: pointer;
 }
 
-/* Updated logic: fade out siblings only when a .job-card is hovered */
-.job-card:hover ~ .job-card {
-  opacity: 0.5;
+.work-history:hover .job-card {
+  opacity: 0.4;
 }
+
 .job-card:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
+
 
 .job-card:hover .position-row h2 {
   color: orange;
@@ -136,3 +138,23 @@
   border-color: orange;
   translate: 5px 0;
 }
+
+.project-image {
+  width: 25%;
+  max-width: 150px;
+  object-fit: cover;
+  flex-shrink: 0;
+  max-height: 75px;
+}
+
+
+.project-description {
+  color: rgb(181, 181, 181) !important;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 70%;
+}
+
+

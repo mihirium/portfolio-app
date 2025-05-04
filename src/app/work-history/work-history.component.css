@@ -26,6 +26,7 @@
 .job-card p {
   margin: 5px 0;
   color: rgb(100, 116, 139);
+  font-size: 0.9em;
 }
 
 .job-card ul {
@@ -75,12 +76,12 @@
   cursor: pointer;
 }
 
-/* Updated logic: fade out siblings only when a .job-card is hovered */
-.job-card:hover ~ .job-card {
-  opacity: 0.5;
+.work-history:hover .job-card {
+  opacity: 0.4;
 }
+
 .job-card:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .job-card:hover .position-row h2 {
