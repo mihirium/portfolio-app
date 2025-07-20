@@ -137,3 +137,11 @@
   border-color: orange;
   translate: 5px 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}

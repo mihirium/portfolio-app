@@ -1,15 +1,11 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
-  ngOnInit(): void {
-    this.activeLine = this.sections[0].name; 
-  }
+export class NavbarComponent implements AfterViewInit {
   activeLine: string | null = null;
 
   sections = [
@@ -21,5 +17,30 @@ export class NavbarComponent implements OnInit {
   toggleLine(section: string) {
     this.activeLine = section;
   }
-  
+
+  ngAfterViewInit() {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const section = this.sections.find(s => s.id === entry.target.id);
+          if (section) {
+            this.activeLine = section.name;
+          }
+        }
+      });
+    }, options);
+
+    this.sections.forEach(section => {
+      const el = document.getElementById(section.id);
+      if (el) {
+        observer.observe(el);
+      }
+    });
+  }
 }

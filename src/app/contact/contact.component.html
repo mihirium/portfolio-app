@@ -1,1 +1,12 @@
-<p>contact works!</p>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label for="email">Email</label>
+    <input id="email" type="email" formControlName="email" />
+  
+    <div *ngIf="email?.invalid && (email?.touched || email?.dirty)" class="error">
+      <div *ngIf="email?.errors?.['required']">Email is required.</div>
+      <div *ngIf="email?.errors?.['email']">Enter a valid email.</div>
+    </div>
+  
+    <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+  </form>
+  

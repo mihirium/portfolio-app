@@ -14,7 +14,7 @@
     "id": 2,
     "Company" : "Bank of America",
     "Link": "https://www.bankofamerica.com",
-    "Calendar" : "June 2023 - August 2023",
+    "Calendar" : "June 2023 - Aug 2023",
     "Position" : "Software Engineering Intern",
     "Dates" : "June - August 2023",
     "Location" : "Charlotte, NC",
@@ -27,7 +27,7 @@
     "Link": "https://emotionbehavior.com",
     "Calendar" : "September 2021 - April 2023",
     "Position" : "Full Stack Mobile Engineer",
-    "Dates" : "2021 - 2023",
+    "Dates" : "Sep 2021 - Apr 2023",
     "Location" : "Charlottesville, VA",
     "Attributes" : ["React Native", "JavaScript", "Firebase"],
     "Description" : ["Enabled the study, design, analysis and simulation of community friendships alongside social and economic mobility parameters by designing, implementing, and launching a full stack react native mobile application.", "Drastically improved user experience by modeling screens after the Gameboy and Ketchapp apps to maximize the game-like feel with Figma.", "Allowed administrators to edit small features of game (number of players, types of roles, and different icons) by using Google sheets API so administrators wouldn't have to edit code base.", "Ensured app quality as a contractor by presenting weekly to 20+ stakeholders including professors and university research assistants."]
