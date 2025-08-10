@@ -39,7 +39,10 @@
     width: 60px;
     background-color: #C4C4C4
   }
-  
 
-  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: none;
+    }
+  }
   

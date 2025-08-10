@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: row;
-  min-height: 100vh; /* ensures it grows at least to full screen height */
+  min-height: 100vh;
 }
 
 .fixed-sidebar {
@@ -23,9 +23,9 @@
   height: 100%;
   width: 80%;
   margin-left: auto;
-  margin-right: auto; 
-
+  margin-right: auto;
 }
+
 .gap {
   margin-bottom: 20%;
 }
@@ -38,13 +38,11 @@
   margin-left: 40vw;
   padding: 2rem;
   padding-top: 15vh;
-  width: 70vw;
+  width: 60vw;
   min-height: 100vh;
   box-sizing: border-box;
 }
 
-
-  
 .name {
   font-size: 3.25vw;
   color: white;
@@ -59,6 +57,109 @@
 
 section {
   scroll-margin-top: 15vh;
+  margin-bottom: 3rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  .fixed-sidebar {
+    width: 25vw;
+  }
+  
+  .content {
+    margin-left: 25vw;
+    width: 75vw;
+    padding: 1.5rem;
+  }
+  
+  .name {
+    font-size: 2.5vw;
+  }
+  
+  .title {
+    font-size: 1.5vw;
+  }
+  
+  section {
+    margin-bottom: 6rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 803px) {
+  section {
+    margin-bottom: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .content {
+    width: 72vw;
+    margin-left: 28vw;
+  }
+
+  .fixed-sidebar {
+    width: 28vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .fixed-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    padding: 1rem;
+  }
+  
+  .sidebar-inner {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .gap {
+    margin-bottom: 2rem;
+  }
+  
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .name {
+    font-size: 2rem;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .content {
+    padding: 0.75rem;
+  }
+  
+  section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .name {
+    font-size: 1.75rem;
+  }
+  
+  .title {
+    font-size: 1rem;
+  }
 }
 
 footer {
