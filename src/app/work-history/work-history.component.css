@@ -11,6 +11,41 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 568px) {
+  .work-history {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .job-card {
+    padding: 10px 0;
+    margin: 15px 0;
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .stack {
+    width: 100%;
+  }
+
+  .stack > div {
+    width: 100% !important;
+  }
+
+  .job-card h2 {
+    font-size: 0.9em;
+  }
+
+  .job-card h3 {
+    font-size: 0.7em;
+  }
+
+  .job-card p {
+    font-size: 0.8em;
+    width: 100%;
+  }
+}
+
 .job-card h2 {
   margin: 0;
   color: #ffffff;
@@ -69,6 +104,35 @@
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 568px) {
+  .stack {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .date-label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 0.7em;
+    order: -1;
+  }
+
+  .position-row {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .job-card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .job-card:last-child {
+    border-bottom: none;
+  }
 }
 
 .job-card:hover {

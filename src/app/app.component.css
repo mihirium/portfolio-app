@@ -143,28 +143,35 @@ section {
   }
 }
 
+
 @media screen and (max-width: 564px) {
   .content {
-    padding: 0.75rem;
+    padding: 0.5rem;
   }
-  
+
   section {
-    margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
-  .name {
-    font-size: 1.75rem;
+
+  section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
   }
-  
-  .title {
-    font-size: 1rem;
-  }
+}
+
+.projects-section {
+  margin-bottom: 5rem !important;
 }
 
 footer {
   text-align: left;
   padding: 20px;
+  position: relative;
+  clear: both;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2rem;
 }
 
 footer .footer-content {
@@ -178,4 +185,27 @@ footer a {
 
 footer a:hover {
   color: rgb(100, 116, 139);
+}
+
+@media screen and (max-width: 1024px) {
+  .projects-section {
+    margin-bottom: 4rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-section {
+    margin-bottom: 3.5rem !important;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .projects-section {
+    margin-bottom: 3rem !important;
+  }
+
+  footer {
+    padding: 15px 0;
+    margin-top: 1rem;
+  }
 }

@@ -1,20 +1,16 @@
 <div class="work-history">
   <div *ngFor="let project of projects" class="job-card">
-    <div class="stack">
-      <img [src]="project.Photo" alt="{{ project.Title }}" class="project-image" />
-      <div class="text-content">
-        <div class="position-row">
-          <h2>{{ project.Title }}</h2>
-          <div class="spacer"></div>
-          <span class="right arrow"></span>
-        </div>
-        <p class="project-description">
-          {{ project.Description.join(' ') }}
-        </p>
-        <div *ngFor="let skill of project.Languages" class="pill">
-          <span class="pill-text">{{ skill }}</span>
-        </div>
-      </div>
+    <div class="position-row">
+      <h2>{{ project.Title }}</h2>
+      <div class="spacer"></div>
+      <span class="right arrow"></span>
     </div>
+    <p class="project-description">
+      {{ project.Description.join(' ') }}
+    </p>
+    <div *ngFor="let skill of project.Languages" class="pill">
+      <span class="pill-text">{{ skill }}</span>
+    </div>
+    <img [src]="project.Photo" alt="{{ project.Title }}" class="project-image" />
   </div>
 </div>
