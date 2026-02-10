@@ -64,6 +64,18 @@
   font-size: 0.9em;
 }
 
+.job-description {
+  margin: 8px 0 0 0;
+  padding-left: 1.2rem;
+  color: rgb(181, 181, 181);
+}
+
+.job-description li {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+  list-style-type: disc;
+}
+
 .job-card ul {
   margin-top: 10px;
   padding-left: 20px;

@@ -3,29 +3,25 @@
        "id": 1,
        "Title": "C--",
        "Languages": ["C++", "LLVM"],
+       "Link": "https://www.google.com",
        "Description": ["Designed a C like toy programming language with scoped variable binding, control flow, and caller-callee syntax, that was parsed using recursive descent" , "Implemented the middle end using LLVM and used multiple optimizations such as dead code elimination, scaler replace of aggregates, and constant folding resulting in a 20% performance boost.", "Integrated contextual error handling with line numbers and token highlights."],
        "Photo": "assets/project-photos/C-.png"
     }, 
     {
        "id": 2,
-       "Title": "MLIR Tutorial",
-       "Languages": ["C++", "MLIR", "LLVM"],
-       "Description": ["Created a tensor based language with the ability to create functions, print, use control flow structures and perform simple computations.", "Defined toy dialect using tablegen and accessed operations via the operation definition specification framework.", "Created and utilized MLIR interfaces for performing generic, dialect-independent transformations, such as shape inference and function inlining, ensuring code consistency and optimization across various dialects.", "Generated LLVM IR from MLIR for code generation and extra optimization using LLVM opt."],
+       "Title": "Job Classifier",
+       "Languages": ["Python", "Angular", "Gemini API"],
+       "Link": "NULL",
+       "Description": ["Developed a web scraping application to search for new job postings on numerous company websites, classifying them via type, requirements, and location using Beautiful Soup, Selenium, and Postman.", "Classified the webpage using a mixture of Gemini for job details and Regex, exported it to a PostgreSQL database and made it available online via Flask API.", "Used Angular Services to create a search engine to pull the data from the API and containerized it using Docker and deployed it on Google Cloud Console."],
        "Photo": "assets/project-photos/MLIR.png"
     }, 
     {
        "id": 3,
        "Title": "Net Prophet",
        "Languages": ["React JS", "Python"],
+       "Link": "NULL",
        "Description": ["Developed a cross platform mobile application that predicted the outcome of Spring 2023 NBA games leveraging React Native as the frontend technology and Python with Firebase as the backend.", "Implemented a robust data scraping solution utilizing Beautiful Soup, enabling the app to gather comprehensive NBA statistics and resources without the need for costly third-party APIs, ensuring the most current information.", "Developed an ensemble model utilizing decision tree, SVM, logistic regression, random forest, and Gaussian Naïve Bayes classifiers to collaboratively predict outcomes in the Spring 2023 NBA games with 55% accuracy."],
        "Photo": "assets/project-photos/MLIR.png"
-    },
-    {
-       "id": 4,
-       "Title": "To Do List",
-       "Languages": ["Swift", "Firebase"],
-       "Description": ["Developed a dynamic to do list application in Swift, enabling users to efficiently create, edit, and organize tasks with priority and due dates.", "Implemented Core Data to persist user tasks across app sessions, ensuring seamless user experience.","Integrated local notifications to remind users of upcoming deadlines and task priorities.", "Designed a dark mode option, offering users a customizable interface and enhancing accessibility."],
-       "Photo": "assets/project-photos/C-.png"
     }
    
    

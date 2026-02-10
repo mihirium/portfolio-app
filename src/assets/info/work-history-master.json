@@ -12,6 +12,17 @@
     },
     {
     "id": 2,
+    "Company" : "Bank of America",
+    "Link": "https://www.bankofamerica.com",
+    "Calendar" : "June 2023 - Aug 2023",
+    "Position" : "Software Engineering Intern",
+    "Dates" : "June - August 2023",
+    "Location" : "Charlotte, NC",
+    "Attributes" : ["Angular", "Spring Boot", "Java", "SQL", "Typescript"],
+    "Description" : ["Significantly optimized release pipeline build-times, local run-times, and code maintainability by migrating legacy java repositories to Angular with additional quality improvement tasks." , "Increased system accuracy and stability by conducting comprehensive testing and debugging in Toad database environments and correcting discrepancies in data type outputs.", "Increased team-wide efficiency in badge authorization security and security clearance application process by designing and implementing a proof-of-concept NLP-powered virtual assistant using Amelia, the Alert API, and the Guardian API.", "Conducted comprehensive research of video surveillance vendors specializing in artificial intelligence for a $20,000,000 deal"]
+    },
+    {
+    "id": 3,
     "Company" : "Emotion and Behavior Lab, UVA",
     "Link": "https://emotionbehavior.com",
     "Calendar" : "September 2021 - April 2023",

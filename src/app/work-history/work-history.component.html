@@ -14,9 +14,9 @@
 
         </div>
 
-        <p style="color: rgb(181, 181, 181);">
-          {{ job.Description.join(' ') }}
-        </p>
+        <ul class="job-description">
+          <li *ngFor="let bullet of job.Description">{{ bullet }}</li>
+        </ul>
         <div *ngFor="let skill of job.Attributes" class="pill">
           <span class="pill-text">{{ skill }}</span>
         </div>
